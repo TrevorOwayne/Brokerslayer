@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- =====================================================================
+       CANVA GENERATED SCRIPTS & FONTS
+       (You can usually leave these alone, they handle Canva's internal logic)
+       ===================================================================== -->
+  <script>window["__codeletBootstrap__"]=JSON.parse('...');</script>
+  <script src="/_sdk/5d7be449459a1919.telemetry_sdk.js" integrity="..."></script>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Broker Slayer Academy</title>
+  
+  <!-- Fonts: Raleway for body text, Space Mono for the techy/eyebrow text -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  
+  <style>
+    /* =====================================================================
+       CSS VARIABLES & GLOBAL STYLES
+       ===================================================================== */
+    :root {
+      --gold: #D4AF37;      /* Primary Brand Gold */
+      --silver: #C0C0C0;    /* Primary Brand Silver */
+      --ink: #0A0A0A;       /* Deep Obsidian Black Background */
+    }
+    
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; } /* Makes the "Claim Your Spot" button scroll down smoothly */
+    
+    body {
+      margin: 0;
+      font-family: Raleway, sans-serif;
+      color: #f7f4eb; /* Off-white for readability */
+      background: #0A0A0A;
+    }
+
+    /* Main wrapper with a subtle gold glow at the top center */
+    .site-shell {
+      width: 100%;
+      overflow: hidden;
+      background: radial-gradient(ellipse at 50% 9%, #4a330d55, transparent 37%), #0A0A0A;
+    }
+
+    /* Utility classes for text colors */
+    .gold-text { color: var(--gold); }
+    .silver-text { color: var(--silver); }
+
+    /* =====================================================================
+       SECTION 1: HERO SECTION (The Visual Hook)
+       ===================================================================== */
+    .hero {
+      position: relative;
+      isolation: isolate;
+      padding: 44px 20px 110px;
+      text-align: center;
+    }
+
+    /* Creates the subtle grid lines in the background of the hero section */
+    .hero:before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      background: linear-gradient(90deg, transparent 0 48%, #d4af3715 49% 50%, transparent 51%) 0 0/75px 100%, linear-gradient(0deg, transparent 0 49%, #d4af370a 50%, transparent 51%) 0 0/100% 76px;
+      mask-image: linear-gradient(transparent, #000 28%, #000 75%, transparent);
+    }
+
+    /* Adds a golden glow at the bottom of the hero section */
+    .hero:after {
+      content: "";
+      position: absolute;
+      inset: auto -5% 0;
+      height: 210px;
+      z-index: -1;
+      background: radial-gradient(ellipse at center, #d4af3730, transparent 67%);
+    }
+
+    /* Container for the logo */
+    .hero-visual {
+      width: min(100%, 520px);
+      height: 230px;
+      margin: 0 auto 24px;
+      position: relative;
+      overflow: hidden;
+      mask-image: linear-gradient(#000 70%, transparent);
+    }
+
+    /* Logo Image Styling */
+    .hero-visual img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 10%;
+      filter: drop-shadow(0 0 23px #d4af3760);
+    }
+
+    /* The glowing SVG chart behind the logo */
+    .chart {
+      position: absolute;
+      inset: 10% 5% 15%;
+      width: 90%;
+      height: 75%;
+      z-index: -1;
+      opacity: .48;
+      filter: drop-shadow(0 0 8px #d4af37);
+    }
+
+    /* Small text above the main headline */
+    .eyebrow {
+      font: 700 11px 'Space Mono', monospace;
+      letter-spacing: .32em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 18px;
+    }
+
+    /* 🚨 [FIX ME] The inline style font-size: 32px overrides the responsive clamp() below. 
+       Remove the inline style to make the headline massive on desktop. */
+    h1 {
+      font-weight: 900;
+      line-height: 1.04;
+      letter-spacing: -.055em;
+      text-shadow: 0 2px 25px #ffffff29;
+      font-size: clamp(43px, 7.3vw, 104px); /* Responsive font size */
+      max-width: 1090px;
+      margin: 0 auto;
+    }
+
+    .hero-sub {
+      font-weight: 800;
+      font-size: clamp(19px, 2.7vw, 29px);
+      line-height: 1.35;
+      margin: 24px auto 18px;
+      max-width: 760px;
+    }
+
+    .hero-body {
+      max-width: 720px;
+      margin: 0 auto 32px;
+      font-size: 15px;
+      line-height: 1.85;
+      color: #f7f4eb;
+    }
+
+    /* =====================================================================
+       3D GOLD BUTTON STYLING
+       ===================================================================== */
+    .gold-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      min-height: 56px;
+      padding: 16px 31px;
+      border-radius: 14px;
+      /* Complex gradient to look like physical metal */
+      background: linear-gradient(115deg, #f9dc79, #d4af37 43%, #99701a 85%, #efcc67);
+      color: #171104;
+      font-weight: 900;
+      letter-spacing: .035em;
+      border: 1px solid #ffe69b;
+      /* Box shadows create the 3D 'pressed' look */
+      box-shadow: inset 0 2px 2px #fff8, 0 6px 0 #76510c, 0 16px 30px #d4af3733;
+      transition: transform .2s, box-shadow .2s;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .gold-button:hover {
+      transform: translateY(-3px);
+      box-shadow: inset 0 2px 2px #fff8, 0 9px 0 #76510c, 0 20px 38px #d4af3755;
+    }
+
+    .gold-button:active {
+      transform: translateY(4px);
+      box-shadow: 0 2px 0 #76510c;
+    }
+
+    .gold-button:disabled { opacity: .6; cursor: wait; }
+    :focus-visible { outline: 3px solid #ffe99e; outline-offset: 4px; }
+
+    /* =====================================================================
+       SECTION 2: THE HOOK PANEL (Straight Line Persuasion)
+       ===================================================================== */
+    .section-wrap {
+      width: 100%;
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .hook {
+      max-width: 900px;
+      margin: -34px auto 110px;
+      padding: 45px clamp(24px, 5vw, 68px);
+      position: relative;
+      border: 1px solid #d4af3780;
+      border-radius: 20px;
+      background: #13120fe8;
+      box-shadow: 0 18px 65px #000, 0 0 45px #d4af3714;
+      text-align: center;
+    }
+
+    .bolt { font-size: 32px; line-height: 1; color: var(--gold); margin-bottom: 17px; }
+    .hook p { font-size: clamp(16px, 2vw, 20px); line-height: 1.8; margin: 0; }
+
+    /* =====================================================================
+       SECTION 3: THE CURRICULUM (Forex & Crypto Tracks)
+       ===================================================================== */
+    .section-kicker {
+      font: 700 11px 'Space Mono', monospace;
+      letter-spacing: .3em;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    .section-title {
+      font-weight: 900;
+      letter-spacing: -.035em;
+      line-height: 1.15;
+      font-size: clamp(29px, 4vw, 49px);
+      margin: 0 0 30px;
+    }
+
+    .curriculum { padding-bottom: 115px; }
+    
+    /* CSS Grid for the two columns */
+    .track-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .track {
+      padding: clamp(25px, 3.5vw, 43px);
+      background: linear-gradient(150deg, #24231f, #101010 72%);
+      border: 1px solid #a98732;
+      border-radius: 20px;
+      box-shadow: inset 0 1px #fff1, 0 20px 45px #0007;
+    }
+
+    .track-symbol { font: 700 13px 'Space Mono', monospace; letter-spacing: .13em; color: #e0bc57; margin-bottom: 27px; }
+    .track h3 { font-size: clamp(23px, 2.5vw, 30px); font-weight: 900; line-height: 1.18; color: var(--gold); margin: 0 0 16px; }
+    .track-intro { color: #f5f3ee; line-height: 1.7; margin: 0 0 26px; }
+    
+    .track ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 22px; }
+    .track li { display: grid; grid-template-columns: 23px 1fr; gap: 11px; line-height: 1.65; color: #f5f3ee; }
+    .check { color: var(--gold); font-weight: 900; font-size: 20px; line-height: 1.3; }
+
+    /* =====================================================================
+       SECTION 4: COMMUNITY & NEWSLETTER
+       ===================================================================== */
+    .community {
+      text-align: center;
+      padding: 75px 24px 105px;
+      border-top: 1px solid #d4af3725;
+      border-bottom: 1px solid #d4af3725;
+      background: radial-gradient(ellipse at center, #3c2c113d, transparent 70%);
+    }
+
+    .community .section-title { color: var(--gold); margin-bottom: 15px; }
+    .community-copy { max-width: 610px; margin: 0 auto 30px; line-height: 1.7; }
+    
+    .subscribe-form { max-width: 590px; margin: 0 auto; display: flex; gap: 10px; }
+    .subscribe-form input {
+      min-width: 0; flex: 1; border: 1px solid #a4894b; border-radius: 12px;
+      padding: 15px 18px; background: #191815; color: #fff; outline: none;
+    }
+    .subscribe-form input:focus { border-color: #ffdf78; box-shadow: 0 0 0 3px #d4af3733; }
+    .subscribe-form .gold-button { min-height: 53px; box-shadow: inset 0 2px 2px #fff7, 0 4px 0 #76510c; }
+    
+    .message { min-height: 25px; font-size: 13px; margin: 16px auto 0; color: #f4d885; line-height: 1.5; }
+    
+    .telegram {
+      margin: 35px auto 0; display: inline-flex; gap: 11px; align-items: center; justify-content: center;
+      padding: 14px 20px; border: 1px solid #d4af37; border-radius: 11px; color: #ebca69; font-weight: 800;
+      text-decoration: none; transition: background .2s;
+    }
+    .telegram:hover { background: #d4af3720; }
+    .telegram svg { width: 19px; height: 19px; fill: currentColor; }
+    
+    .fineprint { font-size: 12px; line-height: 1.6; color: #c7c4bc; max-width: 600px; margin: 12px auto 0; }
+
+    /* =====================================================================
+       SECTION 5: CHECKOUT (Price Anchor & Bank Details)
+       ===================================================================== */
+    .checkout-section { padding: 110px 24px 120px; scroll-margin-top: 25px; }
+    
+    .checkout-box {
+      max-width: 860px; margin: auto; padding: clamp(25px, 5vw, 65px); text-align: center;
+      border: 1px solid #c19b39; border-radius: 24px;
+      background: radial-gradient(ellipse at 50% 0%, #55401765, transparent 52%), #161512;
+      box-shadow: 0 0 80px #d4af3725, inset 0 0 55px #d4af370b;
+    }
+
+    .checkout-box h2 { color: var(--gold); font-weight: 900; font-size: clamp(30px, 4.5vw, 53px); line-height: 1.1; margin: 0 0 29px; }
+    
+    /* Price Anchoring Styles */
+    .old-price { color: var(--silver); font-size: 23px; text-decoration: line-through; margin: 0; }
+    .new-price { color: #f5cc5c; font-weight: 900; font-size: clamp(56px, 10vw, 100px); line-height: 1.1; margin: 4px 0; text-shadow: 0 0 32px #d4af3780; }
+    
+    .badge { display: inline-block; padding: 9px 14px; border-radius: 100px; background: #d4af37; color: #161104; font: 700 11px 'Space Mono', monospace; letter-spacing: .06em; }
+    
+    .step { margin: 35px 0 20px; padding: 23px; background: #22211e; border: 1px solid #77632f; border-radius: 15px; text-align: left; line-height: 1.9; color: #fff; }
+    .step p { margin: 0; }
+    
+    .notice { color: #f1d58e; font-size: 13px; line-height: 1.6; margin: 17px auto; max-width: 620px; }
+    .receipt-file { position: absolute; width: 1px; height: 1px; opacity: 0; overflow: hidden; }
+    
+    .footer-copy { font-size: 13px; line-height: 1.8; color: #eee9de; max-width: 620px; margin: 29px auto 0; }
+    .footer-copy a { color: #f2cf6a; overflow-wrap: anywhere; }
+    
+    footer { text-align: center; padding: 24px; color: #aaa69d; border-top: 1px solid #d4af3725; font-size: 12px; }
+
+    /* =====================================================================
+       RESPONSIVE DESIGN (Mobile Adjustments)
+       ===================================================================== */
+    @media(max-width: 680px) {
+      .hero { padding-top: 23px; padding-bottom: 87px; }
+      .hero-visual { height: 170px; width: min(100%, 370px); }
+      .hook { margin-bottom: 85px; }
+      .track-grid { grid-template-columns: 1fr; } /* Stacks the Forex/Crypto cards on mobile */
+      .curriculum { padding-bottom: 80px; }
+      .subscribe-form { flex-direction: column; }
+      .subscribe-form .gold-button { width: 100%; }
+      .checkout-section { padding: 80px 18px; }
+      .section-wrap { padding: 0 18px; }
+    }
+
+    @media(prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *:before, *:after { transition: none !important; animation: none !important; }
+    }
+  </style>
+  
+  <!-- External Canva Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com/3.4.17" type="text/javascript"></script>
+  <script src="/_sdk/ea2423e0a01a756f.data_sdk.js" type="text/javascript" integrity="..."></script>
+  <script src="/_sdk/171c60c1bf9e5c77.editing_sdk.js" type="text/javascript" integrity="..."></script>
+  <script src="/_sdk/a202d01287f70bbd.resizing_sdk.js" type="text/javascript" integrity="..."></script>
+</head>
+
+<body data-template-id="__page-root" class="w-full" style="background: rgb(10, 10, 10);">
+  <div class="site-shell">
+
+    <!-- =====================================================================
+         HERO SECTION
+         ===================================================================== -->
+    <header class="hero">
+      <!-- Background SVG Chart Animation -->
+      <svg class="chart" viewBox="0 0 1000 330" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 300 L90 275 L145 286 L220 244 L275 251 L340 205 L397 224 L475 180 L530 192 L600 132 L668 148 L725 112 L785 125 L845 70 L910 82 L1000 10" fill="none" stroke="#D4AF37" stroke-width="3"></path> 
+        <path d="M0 300 L90 275 L145 286 L220 244 L275 251 L340 205 L397 224 L475 180 L530 192 L600 132 L668 148 L725 112 L785 125 L845 70 L910 82 L1000 10 L1000 330 L0 330Z" fill="#D4AF37" opacity=".06"></path> 
+        <g stroke="#D4AF37" stroke-width="2">
+          <path d="M90 245v68m130-88v72m120-111v70m135-109v65m125-108v68m125-90v69m120-97v66m155-104v62"></path>
+        </g>
+      </svg>
+
+      <!-- Logo Container -->
+      <!-- 🚨 [FIX ME] The src="canva://..." will break outside of Canva. Change it to src="your-logo-file.png" -->
+      <div class="hero-visual">
+        <img data-template-id="hero-artwork" class="canva-image" src="broker.png" alt="Broker Slayer Academy gold and silver logo with a golden bull and rising trading chart">
+      </div>
+
+      <p data-template-id="hero-eyebrow" class="canva-text eyebrow" style="color: rgb(212, 175, 55); font-weight: 700; font-style: normal; font-size: 16px;">THE DECEMBER BLUEPRINT</p>
+      
+      <!-- Main Headline (Remove inline font-size: 32px to make it large again) -->
+      <h1 data-template-id="hero-headline" class="canva-text silver-text" style="color: rgb(192, 192, 192); font-weight: 900; font-style: normal;">MASTER THE MARKET.
+      <p></p>SLAY THE BROKERS.</h1>
+      
+      <p data-template-id="hero-subheadline" class="canva-text hero-sub gold-text" style="color: rgb(212, 175, 55); font-weight: 800; font-style: normal; font-size: 16px;">The Ultimate December Blueprint for Forex Dominance.</p>
+      
+      <p data-template-id="hero-body" class="canva-text hero-body" style="color: rgb(247, 244, 235); font-weight: 400; font-style: normal; font-size: 16px;">Whether you are starting from zero or looking to refine your edge, we install a mechanical, proven process to trade with absolute certainty. Stop guessing. Start executing.</p>
+      
+      <!-- CTA Button linking to #checkout section -->
+      <a data-template-id="hero-cta" class="canva-button gold-button" href="#checkout" style="background: linear-gradient(115deg, rgb(249, 220, 121), rgb(212, 175, 55), rgb(153, 112, 26), rgb(239, 204, 103)); color: rgb(23, 17, 4); font-weight: 900; font-style: normal; font-size: 16px;">CLAIM YOUR SPOT NOW</a>
+    </header>
+
+    <main>
+      <!-- =====================================================================
+           SECTION 2: STRAIGHT LINE HOOK
+           ===================================================================== -->
+      <section class="section-wrap" aria-label="Our approach">
+        <div data-template-id="hook-panel" class="canva-panel hook" style="background: rgb(19, 18, 15);">
+          <div class="bolt" aria-hidden="true">ϟ</div>
+          <p data-template-id="hook-copy" class="canva-text" style="color: rgb(247, 244, 235); font-weight: 400; font-style: normal; font-size: 16px;">The Forex market don’t care about your hopes. It only reward certainty. If you are a beginner, stop the confusion. If you are experienced, stop the emotional rollercoaster. We don't sell dreams; we install institutional systems. We have done the heavy lifting. All you have to do is take the step.</p>
+        </div>
+      </section>
+
+      <!-- =====================================================================
+           SECTION 3: DUAL-TRACK CURRICULUM
+           ===================================================================== -->
+      <section class="section-wrap curriculum" aria-labelledby="curriculum-title">
+        <p data-template-id="curriculum-kicker" class="canva-text section-kicker" style="color: rgb(212, 175, 55); font-weight: 700; font-style: normal; font-size: 16px;">ONE MARKET. ONE DISCIPLINE.</p>
+        <h2 id="curriculum-title" data-template-id="curriculum-title" class="canva-text section-title silver-text" style="color: rgb(192, 192, 192); font-weight: 900; font-style: normal; font-size: 24px;">YOUR PATH TO THE EDGE</h2>
+        
+        <div class="track-grid">
+          <!-- Forex Track Card -->
+          <article data-template-id="forex-card" class="canva-card track" style="background: linear-gradient(150deg, rgb(36, 35, 31), rgb(16, 16, 16));">
+            <div class="track-symbol" aria-hidden="true">01 / FOREX</div>
+            <h3 data-template-id="forex-title" class="canva-text" style="color: rgb(212, 175, 55); font-weight: 900; font-style: normal; font-size: 19px;">THE FOREX SLAYER TRACK</h3>
+            <p data-template-id="forex-intro" class="canva-text track-intro" style="color: rgb(245, 243, 238); font-weight: 400; font-style: normal; font-size: 16px;">Master the world's largest market from currency pairs to advanced price action.</p>
+            <ul>
+              <li><span class="check" aria-hidden="true">✓</span><span data-template-id="forex-point-1" class="canva-text" style="color: rgb(245, 243, 238); font-weight: 400; font-style: normal; font-size: 16px;">Zero-to-Slayer Foundations: Market structure, risk management, and psychological reprogramming.</span></li>
+              <li><span class="check" aria-hidden="true">✓</span><span data-template-id="forex-point-2" class="canva-text" style="color: rgb(245, 243, 238); font-weight: 400; font-style: normal; font-size: 16px;">The Execution Model: Proprietary mechanical entry and exit strategies to catch major daily swings.</span></li>
+              <li><span class="check" aria-hidden="true">✓</span><span data-template-id="forex-point-3" class="canva-text" style="color: rgb(245, 243, 238); font-weight: 400; font-style: normal; font-size: 16px;">Live-Market Intensive: Trade alongside the community in real-time.</span></li>
+            </ul>
+          </article>
+
+          <!-- Crypto Track Card -->
+          <!-- 🚨 [FIX ME] The style="filter: blur(6px);" is making this entire card unreadable. Remove it. -->
+          <article data-template-id="crypto-card" class="canva-card track" style="filter: blur(6px); background: linear-gradient(150deg, rgb(36, 35, 31), rgb(16, 16, 16));">
+            <div class="track-symbol" aria-hidden="true">02 / CRYPTO</div>
+            <h3 data-template-id="crypto-title" class="canva-text" style="color: rgb(212, 175, 55); font-weight: 900; font-style: normal; font-size: 19px;">THE CRYPTO SLAYER TRACK</h3>
+            <p data-template-id="crypto-intro" class="canva-text track-intro" style="color: rgb(245, 243, 238); font-weight: 400; font-style: normal; font-size: 16px;">Navigate the future of finance and ride the waves of market volatility.</p>
+            <ul>
+              <li><span class="check" aria-hidden="true">✓</span><span data-template-id="crypto-point-1" class="canva-text" style="color: rgb(245, 243, 238); font-weight: 400; font-style: normal; font-size: 16px;">The Crypto Blueprint: Understand on-chain metrics, market cycles, and safely store your assets.</span></li>
+              <li><span class="check" aria-hidden="true">✓</span><span data-template-id="crypto-point-2" class="canva-text" style="color: rgb(245, 243, 238); font-weight: 400; font-style: normal; font-size: 16px;">Volatility Mastery: Trade Bitcoin and Altcoins with strict risk parameters. Eliminate fear.</span></li>
+              <li><span class="check" aria-hidden="true">✓</span><span data-template-id="crypto-point-3" class="canva-text" style="color: rgb(245, 243, 238); font-weight: 400; font-style: normal; font-size: 16px;">The Slayer Mindset: Detach from the hype and trade the charts with cold, calculated certainty.</span></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- =====================================================================
+           SECTION 4: COMMUNITY & NEWSLETTER
+           ===================================================================== -->
+      <section class="community" aria-labelledby="community-title">
+        <div class="section-wrap">
+          <h2 id="community-title" data-template-id="community-title" class="canva-text section-title" style="color: rgb(212, 175, 55); font-weight: 900; font-style: normal; font-size: 24px;">GET THE UNFAIR ADVANTAGE.</h2>
+          <p data-template-id="community-copy" class="canva-text community-copy" style="color: rgb(247, 244, 235); font-weight: 400; font-style: normal; font-size: 16px;">Join our exclusive newsletter for daily market breakdowns and hidden institutional setups.</p>
+          
+          <!-- Newsletter Form (Note: This uses Canva's internal dataSdk which might break if you host externally) -->
+          <!-- Formspree Newsletter Integration -->
+<form id="subscribe-form" class="subscribe-form" action="https://formspree.io/f/mbgooley" method="POST">
+  <label for="subscriber-email" class="sr-only">Email address</label>
+  <!-- name="email" is required for Formspree to know where to send the reply -->
+  <input id="subscriber-email" name="email" class="canva-input" type="email" autocomplete="email" required placeholder="Enter your best email" style="background: rgb(25, 24, 21); color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 16px;">
+  
+  <!-- Honeypot for spam protection (hidden from humans) -->
+  <input type="text" name="_gotcha" style="display:none" />
+  
+  <button id="subscribe-button" type="submit" class="canva-button gold-button" style="background: linear-gradient(115deg, rgb(249, 220, 121), rgb(212, 175, 55), rgb(153, 112, 26), rgb(239, 204, 103)); color: rgb(23, 17, 4); font-weight: 900; font-style: normal; font-size: 16px;">SUBSCRIBE</button>
+</form>
+<p id="subscribe-status" class="message" role="status" aria-live="polite"></p>
+          <p id="subscribe-status" class="message" role="status" aria-live="polite"></p>
+
+          <!-- Telegram Button -->
+          <!-- 🚨 [FIX ME] Change href="https://t.me/" to your actual group link: "https://t.me/c/2155982066/7100" -->
+          <a data-template-id="telegram-button" class="canva-button telegram" href="https://t.me/c/2155982066/7100" target="_blank" rel="noopener noreferrer" style="color: rgb(235, 202, 105);">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.8 3.7 18.5 20c-.2 1.1-.9 1.4-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.4-8.5c.4-.4-.1-.6-.6-.3L5.9 13.4l-4.9-1.5c-1.1-.3-1.1-1.1.2-1.6L20.3 3c.9-.3 1.7.2 1.5.7Z"></path></svg>
+            <span data-template-id="telegram-button-text" class="canva-text" style="color: rgb(235, 202, 105); font-weight: 800; font-style: normal; font-size: 16px;">JOIN THE FREE TELEGRAM COMMUNITY</span>
+          </a>
+          <!-- 🚨 [FIX ME] Remove this placeholder note once the link is updated -->
+        </div>
+      </section>
+
+      <!-- =====================================================================
+           SECTION 5: CHECKOUT & PAYMENT
+           ===================================================================== -->
+      <section id="checkout" class="checkout-section" aria-labelledby="checkout-title">
+        <div data-template-id="checkout-box" class="canva-panel checkout-box" style="background: rgb(22, 21, 18);">
+          <h2 id="checkout-title" data-template-id="checkout-title" class="canva-text" style="color: rgb(212, 175, 55); font-weight: 900; font-style: normal; font-size: 24px;">SECURE YOUR DECEMBER SPOT.</h2>
+          
+          <!-- Price Anchoring -->
+          <p data-template-id="original-price" class="canva-text old-price" style="color: rgb(192, 192, 192); font-weight: 400; font-style: normal; font-size: 16px;">₦100,000</p>
+          <p data-template-id="discount-price" class="canva-text new-price" style="color: rgb(245, 204, 92); font-weight: 900; font-style: normal; font-size: 16px;">₦50,000</p>
+          <span data-template-id="discount-badge" class="canva-tag badge" style="background: rgb(212, 175, 55); color: rgb(22, 17, 4); font-weight: 700; font-style: normal; font-size: 16px;">DECEMBER DISCOUNT APPLIED</span>
+          
+          <!-- Bank Transfer Details -->
+          <div data-template-id="transfer-box" class="canva-card step" style="background: rgb(34, 33, 30);">
+            <!-- 🚨 [FIX ME] Replace "[Insert Your Account Number]" with your actual First Bank Account Number -->
+            <p data-template-id="transfer-details" class="canva-text" style="color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 16px;">1. MAKE A DIRECT BANK TRANSFER. <p>
+            <p/>Bank Name: First Bank.<p></p> Account Name: Juliet Ihuoma Okorie.<p></p> Account Number: 3055991723.<p></p> Amount: ₦50,000.</p>
+          </div>
+          
+          <p data-template-id="bank-notice" class="canva-text notice" style="color: rgb(241, 213, 142); font-weight: 400; font-style: normal; font-size: 16px;">The account number provided must be verified before making a transaction. Do not make a transfer until you have verified the complete bank details with the academy.</p>
+          
+          <!-- 🚨 [FIX ME] This is the original file upload code. It doesn't actually send the file. 
+               I recommend replacing lines 476-479 with an anchor tag linking to your Google Form instead. -->
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScH9FNWMn_UVpNhjaU9gOsAZFoXFXnaadMT_R3SzOmqegTKKg/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer" data-template-id="receipt-button" class="canva-button gold-button" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center; width: 100%; max-width: 400px; margin: 0 auto;">UPLOAD RECEIPT / CLAIM SPOT</a>
+<p data-template-id="receipt-notice" class="canva-text notice" style="color: rgb(241, 213, 142); font-weight: 400; font-style: normal; font-size: 14px; margin-top: 15px;">Clicking the button above will open a secure form where you can upload your transfer receipt and submit your details.</p>
+          
+          <!-- Contact Info -->
+          <p class="footer-copy"><span data-template-id="checkout-footer-prefix" class="canva-text" style="color: rgb(238, 233, 222); font-weight: 400; font-style: normal; font-size: 16px;">Once verified, your official Digital Membership Pass will be sent to your email within 24 hours. For any issues, contact us at:</span> <a href="mailto:brokerslayer001@gmail.com" data-template-id="contact-email" class="canva-link" style="color: rgb(242, 207, 106); font-weight: 400; font-style: normal; font-size: 16px;">brokerslayer001@gmail.com</a></p>
+          or call
+          <p></p>09011615514<p>08037187657</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span data-template-id="footer-brand" class="canva-text" style="color: rgb(170, 166, 157); font-weight: 400; font-style: normal; font-size: 16px;">BROKER SLAYER ACADEMY</span>
+    </footer>
+  </div>
+
+  <!-- =====================================================================
+       JAVASCRIPT LOGIC
+       ===================================================================== -->
+  <script>
+
+    // Handle Receipt File Selection
+    document.getElementById('receipt-button').addEventListener('click', () => receiptInput.click());
+    
+    receiptInput.addEventListener('change', () => {
+      const file = receiptInput.files && receiptInput.files[0];
+      if (!file) return;
+      
+      const allowed = ['image/jpeg','image/png','image/webp','application/pdf'];
+      
+      // Validation logic
+      if (!allowed.includes(file.type)) {
+        receiptStatus.textContent = 'Choose a JPG, PNG, WebP, or PDF receipt.';
+        receiptInput.value = '';
+      } else if (file.size > 10 * 1024 * 1024) {
+        receiptStatus.textContent = 'Choose a receipt smaller than 10 MB.';
+        receiptInput.value = '';
+      } else {
+        // Tells the user to email it manually
+        receiptStatus.textContent = `Selected: ${file.name}. This file has NOT been sent. Please attach it to an email to brokerslayer001@gmail.com.`;
+      }
+    });
+  </script>
+</body>
+</html>
